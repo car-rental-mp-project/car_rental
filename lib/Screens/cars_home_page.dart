@@ -26,7 +26,6 @@ class CarsHomePage extends StatefulWidget {
   @override
   State<CarsHomePage> createState() => _CarsHomePageState();
 }
-
 class _CarsHomePageState extends State<CarsHomePage> with SingleTickerProviderStateMixin {
   late String _selectedOption;
   late Future<void> bannerAdFuture;
@@ -101,7 +100,7 @@ class _CarsHomePageState extends State<CarsHomePage> with SingleTickerProviderSt
               centerTitle: true,
               elevation: 0,
               actions: [
-                // PopupMenuButton and other app bar widgets
+                // PopupMenuButton and other app bar widgets here
               ],
             ),
             body: SafeArea(
@@ -118,7 +117,7 @@ class _CarsHomePageState extends State<CarsHomePage> with SingleTickerProviderSt
                     padding: const EdgeInsets.symmetric(vertical: 2),
                     decoration: const BoxDecoration(color: Colors.white),
                     alignment: Alignment.center,
-                    child: Image.asset("assets/images/drLogo.png", height: 50, width: 120),
+                    child: Image.asset("assets/images/drivesyncLogo.png", height: 50, width: 120),
                   ),
                   Expanded(
                     child: Container(
@@ -210,29 +209,23 @@ class _CarsHomePageState extends State<CarsHomePage> with SingleTickerProviderSt
   }
 }
 
-
-
-
 class CarsController extends GetxController {
   static CarsController get instance  =>Get.find();
 
-
   final _authFunctions = Get.put(AuthenticationFunctions());
   final _carFunctions = Get.put(CarFunctions());
-  //query the data. first get user's email
+
+  //query data, firstly get users' emails
   getUsersCarsData(){
 
     final email = _authFunctions.firebaseUser?.email;
     if (email != null){
       return  _carFunctions.getCarDetails(email);
-
     } else{
       Get.snackbar("Error", "Login to proceed");
     }
   }
-
   getAllCarsDetails(){
-
     return _carFunctions.getAllCarDetails();
   }
 
