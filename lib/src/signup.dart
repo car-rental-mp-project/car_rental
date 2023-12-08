@@ -52,7 +52,7 @@ class _SignUpPageState extends State<SignUpPage> {
               obscureText: isPassword,
               decoration: InputDecoration(
                   border: InputBorder.none,
-                  fillColor: Colors.blue,
+                  fillColor: Colors.lightBlueAccent,
                   filled: true))
         ],
       ),
