@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:car_rental/src/Widgets/bezierContainer.dart';
+import 'package:car_rental/src/loginPage.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class SignUpPage extends StatefulWidget {
   SignUpPage({Key ?key, this.title}) : super(key: key);
@@ -112,5 +116,81 @@ class _SignUpPageState extends State<SignUpPage> {
       ),
     );
   }
+  
+ Widget _title() {
+    return RichText(
+      textAlign: TextAlign.center,
+      text: TextSpan(
+          text: 'd',
+          style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.w700,
+              color: Color(0xffe46b10)
+          ),
 
+          children: [
+            TextSpan(
+              text: 'ev',
+              style: TextStyle(color: Colors.black, fontSize: 30),
+            ),
+            TextSpan(
+              text: 'rnz',
+              style: TextStyle(color: Color(0xffe46b10), fontSize: 30),
+            ),
+          ]),
+    );
+  }
+
+  Widget _emailPasswordWidget() {
+    return Column(
+      children: <Widget>[
+        _entryField("Username"),
+        _entryField("Email id"),
+        _entryField("Password", isPassword: true),
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    return Scaffold(
+      body: Container(
+        height: height,
+        child: Stack(
+          children: <Widget>[
+            Positioned(
+              top: -MediaQuery.of(context).size.height * .15,
+              right: -MediaQuery.of(context).size.width * .4,
+              child: BezierContainer(),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(height: height * .2),
+                    _title(),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    _emailPasswordWidget(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    _submitButton(),
+                    SizedBox(height: height * .14),
+                    _loginAccountLabel(),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(top: 40, left: 0, child: _backButton()),
+          ],
+        ),
+      ),
+    );
+  }
 }
