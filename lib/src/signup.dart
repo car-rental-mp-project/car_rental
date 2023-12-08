@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:car_rental/src/Widgets/bezierContainer.dart';
+import 'package:car_rental/src/widgets/bezierContainer.dart';
 import 'package:car_rental/src/loginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
