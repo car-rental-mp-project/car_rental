@@ -63,57 +63,44 @@ class _WelcomePageState extends State<WelcomePage> {
     );
   }
 
-  // Widget _label() {
-  //   return Container(
-  //       margin: EdgeInsets.only(top: 40, bottom: 20),
-  //       child: Column(
-  //         children: <Widget>[
-  //           Text(
-  //             'Quick login with Touch ID',
-  //             style: TextStyle(color: Colors.white, fontSize: 17),
-  //           ),
-  //           SizedBox(
-  //             height: 20,
-  //           ),
-  //           Icon(Icons.fingerprint, size: 90, color: Colors.white),
-  //           SizedBox(
-  //             height: 20,
-  //           ),
-  //           Text(
-  //             'Touch ID',
-  //             style: TextStyle(
-  //               color: Colors.white,
-  //               fontSize: 15,
-  //               decoration: TextDecoration.underline,
-  //             ),
-  //           ),
-  //         ],
-  //       ));
-  // }
-
   Widget _title() {
+    return Column(
+      children: [
+          RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              text: 'Welcome to CarRental\n',
+              style: GoogleFonts.portLligatSans(
+                textStyle: Theme.of(context).textTheme.headline1,
+                fontSize: 40,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+              ),
+            ),
+          ),
+      ],
+    );
+
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-          text: '',
-          style: GoogleFonts.portLligatSans(
-            textStyle: Theme.of(context).textTheme.headline1,
-            fontSize: 30,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
+        text: 'DriveSync:\n',
+        style: GoogleFonts.portLligatSans(
+          textStyle: Theme.of(context).textTheme.headline1,
+          fontSize: 40,
+          fontWeight: FontWeight.w700,
+          color: Colors.white,
+        ),
+        children: [
+          TextSpan(
+            text: 'Car Rental Service',
+            style: TextStyle(color: Colors.black, fontSize: 24),
           ),
-          children: [
-            TextSpan(
-              text: 'Car',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
-            TextSpan(
-              text: 'Rental',
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            ),
-          ]),
+        ],
+      ),
     );
   }
+
 
   @override
   Widget build(BuildContext context) {
