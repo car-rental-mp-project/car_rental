@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "120932562606",
+    "project_id": "drivesync-8af1b",
+    "storage_bucket": "drivesync-8af1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120932562606:android:68967b1d6c0304bd6f5f3f",
+        "android_client_info": {
+          "package_name": "com.example.myapp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8W2G0xBrmlS8oEwa3RnEJBy8ECYwwo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120932562606:android:134ca6c6ae667da46f5f3f",
+        "android_client_info": {
+          "package_name": "com.fredtheedev.drivio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8W2G0xBrmlS8oEwa3RnEJBy8ECYwwo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
