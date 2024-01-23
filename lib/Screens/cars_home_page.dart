@@ -118,7 +118,7 @@ class _CarsHomePageState extends State<CarsHomePage> with SingleTickerProviderSt
                     padding: const EdgeInsets.symmetric(vertical: 2),
                     decoration: const BoxDecoration(color: Colors.white),
                     alignment: Alignment.center,
-                    child: Image.asset("assets/images/drLogo.png", height: 50, width: 120),
+                    child: Image.asset("assets/images/drivesyncLogo.png", height: 50, width: 120),
                   ),
                   Expanded(
                     child: Container(
