@@ -144,7 +144,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
                 height: 40,
                 width: 200,
                 decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.blue,
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(

@@ -85,7 +85,7 @@ class _CarsListPageState extends State<CarsListPage>
             decoration: const BoxDecoration(color: Colors.white),
             alignment: Alignment.center,
             child:
-                Image.asset("assets/images/drLogo.png", height: 50, width: 120),
+                Image.asset("assets/images/logoAsync.png", height: 50, width: 120),
           ),
 
           //search bar
@@ -129,7 +129,7 @@ class _CarsListPageState extends State<CarsListPage>
                     isScrollable: true,
                     indicator: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.red,
+                      color: Colors.blue,
                     ),
                     indicatorColor: Colors.grey.withOpacity(0.5),
                     labelColor: Colors.white,
