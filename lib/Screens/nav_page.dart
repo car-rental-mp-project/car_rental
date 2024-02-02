@@ -35,7 +35,7 @@ class _NavPageState extends State<NavPage> {
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: currentIndex,
           backgroundColor: AppColors.backgroundColor,
-          selectedItemColor: Colors.red,
+          selectedItemColor: Colors.blue,
           unselectedItemColor: Colors.grey,
           selectedFontSize: 0,
           unselectedFontSize: 0,
