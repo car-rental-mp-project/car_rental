@@ -67,7 +67,7 @@ class ButtonStyleConstants {
   static const double borderRadius = 16.0;
   static const EdgeInsetsGeometry buttonPadding =
   EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0);
-  static const Color primaryColor = Colors.redAccent;
+  static const Color primaryColor = Colors.blue;
   static const Color secondaryColor = Colors.white;
   static const Color blackColor = Colors.black;
 
