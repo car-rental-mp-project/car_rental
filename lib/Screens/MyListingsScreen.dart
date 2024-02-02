@@ -199,7 +199,7 @@ class _MyListingsScreenState extends State<MyListingsScreen>
                       padding: const EdgeInsets.symmetric(vertical: 2),
                       decoration: const BoxDecoration(color: Colors.white),
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/drLogo.png",
+                      child: Image.asset("assets/images/drivesyncLogo.png",
                           height: 50, width: 120),
                       // child: FutureBuilder(
                       //   future: FirebaseRemoteConfigClass().initializeConfig(),
@@ -379,14 +379,14 @@ class _MyListingsScreenState extends State<MyListingsScreen>
                   ],
                 ),
               ),
-              persistentFooterButtons: [
-                SizedBox(
-                  height: bannerAd2.size.height.toDouble(),
-                  width: bannerAd2.size.width.toDouble(),
-                  child:
-                      isAdLoaded2 ? AdWidget(ad: bannerAd2) : const SizedBox(),
-                ),
-              ],
+              // persistentFooterButtons: [
+              //   SizedBox(
+              //     height: bannerAd2.size.height.toDouble(),
+              //     width: bannerAd2.size.width.toDouble(),
+              //     child:
+              //         isAdLoaded2 ? AdWidget(ad: bannerAd2) : const SizedBox(),
+              //   ),
+              // ],
             );
           } else {
             return Center(child: const CircularProgressIndicator());

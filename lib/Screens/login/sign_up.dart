@@ -121,7 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               suffixIcon: IconButton(
                                 icon: Icon(
                                   _obscurepin ? Icons.visibility_off : Icons.visibility,
-                                  color: Colors.red,
+                                  color: Colors.blue,
                                 ),
                                 onPressed: () {
                                   setState(() {
@@ -152,7 +152,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               suffixIcon: IconButton(
                                 icon: Icon(
                                   _obscureConfirmPin ? Icons.visibility_off : Icons.visibility,
-                                  color: Colors.red,
+                                  color: Colors.blue,
                                 ),
                                 onPressed: () {
                                   setState(() {

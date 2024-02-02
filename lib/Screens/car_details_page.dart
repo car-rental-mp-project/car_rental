@@ -1,7 +1,7 @@
 import 'dart:ffi';
 import 'dart:io';
 
-import 'package:car_rent/Screens/api_trial.dart';
+//import 'package:car_rent/Screens/api_trial.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -11,7 +11,7 @@ import '../models/car_model.dart';
 import '../utils/utils.dart';
 import 'package:car_rent/utils/colors.dart' as AppColors;
 
-import 'my_bookings.dart';
+//import 'my_bookings.dart';
 
 class CarDetailsPage extends StatefulWidget {
   final Car car;

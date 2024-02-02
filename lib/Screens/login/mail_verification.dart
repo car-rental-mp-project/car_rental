@@ -25,7 +25,7 @@ class MailVerification extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             SizedBox(height: 60,),
-            Icon(Icons.mail_outline_outlined, size: 100, color: Colors.red),
+            Icon(Icons.mail_outline_outlined, size: 100, color: Colors.blue),
             SizedBox(height: 20),
             Text(
               'Verify your Email',
@@ -48,9 +48,9 @@ class MailVerification extends StatelessWidget {
             TextButton(onPressed: () => AuthenticationFunctions.instance.signOut(), child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.logout, color: Colors.red),
+                Icon(Icons.logout, color: Colors.blue),
                 SizedBox(width: 10),
-                Text('Back to login', style: GoogleFonts.poppins(color: Colors.red),)
+                Text('Back to login', style: GoogleFonts.poppins(color: Colors.blue),)
               ]
             ))
 

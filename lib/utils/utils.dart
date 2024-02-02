@@ -55,7 +55,7 @@ final bodyText = GoogleFonts.poppins(
 
 
 
-const String appLogo = "assets/images/drLogo.png";
+const String appLogo = "assets/images/drivesyncLogo.png";
 const String password = "assets/images/password.png";
 
 class ButtonStyleConstants {

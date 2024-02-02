@@ -85,7 +85,7 @@ class _CarsListPageState extends State<CarsListPage>
             decoration: const BoxDecoration(color: Colors.white),
             alignment: Alignment.center,
             child:
-                Image.asset("assets/images/logoAsync.png", height: 50, width: 120),
+                Image.asset("assets/images/carLogo.png", height: 50, width: 120),
           ),
 
           //search bar

@@ -27,7 +27,7 @@ class UserFunctions extends GetxController{
         .catchError((e, stackTrace) {
       Get.snackbar("Error", "Something went wrong.Try again",
         snackPosition: SnackPosition.BOTTOM,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
         colorText: Colors.white,);
       print(
           e.toString());
